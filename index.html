@@ -129,10 +129,30 @@ for (i = 0; i < acc.length; i++) {
  <p><center>Hello and welcome.</center></p>
  <p><center>Here you will find all related references to the application.</center></p>
  <p><center><i>The application is currently under process.</i></center></p>
-  <a onclick="this.firstChild.play()" class="button">
-   <audio src="http://upload.wikimedia.org/wikipedia/commons/a/a9/Tromboon-sample.ogg">
-   </audio>
-&#9658;</a>
+  <head>
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
+<script type='text/javascript' src="http://www.jplayer.org/latest/js/jquery.jplayer.min.js"></script>
+<div id="audio"></div>
+<a href="http://www.freesfx.co.uk/rx2/mp3s/3/2665_1315685839.mp3">
+    <img src="http://icons.iconarchive.com/icons/creative-freedom/shimmer/48/Play-icon.png" />
+</a>
+<a href="http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3">
+    <img src="http://icons.iconarchive.com/icons/creative-freedom/shimmer/48/Play-icon.png" />
+</a>
+<script>
+  $("#audio").jPlayer({
+    swfPath: "http://www.jplayer.org/latest/js/Jplayer.swf",
+    supplied: "mp3"
+});
+
+$("a").click(function(e) {
+    $("#audio").jPlayer("setMedia", { 
+        mp3: this.href 
+    }).jPlayer("play");
+
+    e.preventDefault();
+});
+</script>
 
 </div>
 
