@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="js consumer build-stable chrome win64-incapable mac twisty-js" lang="en" id="mac">
   <!-- CSS for styling all of the "tabs" and "text" -->
 <header style="font-size:50px; margin:10pxl; color:#80dfff;"><b>SpeechDev BETA</b></header>
 <style>
@@ -97,6 +97,7 @@ div.panel {
  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Downloads')" style="border-radius:10px">Magic</a></li>
  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Documentation')" style="border-radius:10px">Moer Magic</a></li>
  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')" style="border-radius:10px">Contact</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'black')" style="border-radius:10px">Black Magic (Secret)</a></li>
 </ul>
 </nav>
 <div id="Introduction" class="tabcontent">
@@ -622,6 +623,9 @@ action="contact-form-handler.php">
     <input type="submit" value="Submit">
 </form>
 </div>
+  <div id="black" class="tabcontent">
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')" style="border-radius:10px">Contact</a></li>
+  </div>
 <script language="JavaScript">
 var frmvalidator  = new Validator("contactform");
 frmvalidator.addValidation("name","req","Please provide your name");
