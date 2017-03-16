@@ -1,14 +1,34 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @toyotaghost
+ Sign out
+ Watch 1
+  Star 0
+  Fork 2 ZexakX/bestprogrammingassignment
+forked from toyotaghost/bestprogrammingassignment
+ Code  Pull requests 1  Projects 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathbestprogrammingassignment/index.html
+078435f  16 days ago
+@toyotaghost toyotaghost Update index.html
+4 contributors @toyotaghost @kekTEHfrahg @WarriorGaming @Shabnan
+RawBlameHistory    
+615 lines (605 sloc)  22.4 KB
 <!DOCTYPE html>
-<html class="js consumer build-stable chrome win64-incapable mac twisty-js" lang="en" id="mac">
+
+                                                                                                <!DOCTYPE html>
+<html>
   <!-- CSS for styling all of the "tabs" and "text" -->
-<header style="font-size:50px; margin:10pxl; color:#80dfff;"><b>SpeechDev BETA</b></header>
+<header style="font-size:50px; margin:10pxl; color: blue;"><center><b><i>Pupppies and Kittens Inc.</i></b></center></header>
 <style>
   /* Style the text to speech */
     .speech {border: 1px solid #DDD; width: 300px; padding: 0; margin: 0}
   .speech input {border: 0; width: 240px; display: inline-block; height: 30px;}
   .speech img {float: right; width: 40px }
-body {
-  background-image: url("skyline-buildings-new-york-skyscrapers.jpg");
+* {
 }
 body {font-family: "Lato", sans-serif;}
 ul {
@@ -43,7 +63,7 @@ ul.tab li a:hover {
 }
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {
-   background-color: transparent;
+   background-color: #ccc;
 }
 /* Style the tab content */
 .tabcontent {
@@ -97,13 +117,12 @@ div.panel {
  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Downloads')" style="border-radius:10px">Magic</a></li>
  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Documentation')" style="border-radius:10px">Moer Magic</a></li>
  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')" style="border-radius:10px">Contact</a></li>
-
 </ul>
 </nav>
 <div id="Introduction" class="tabcontent">
- <button class="accordion">Welcome!</button>
-<div class="panel" style="background-color:transparent;">
-  <p>Welcome to our website! Here you will find the application and references related to it.</p>
+ <button class="accordion">Hi</button>
+<div class="panel">
+  <p>Hai</p>
 </div>
 
 <script>
@@ -128,30 +147,6 @@ for (i = 0; i < acc.length; i++) {
  <p><center>Hello and welcome.</center></p>
  <p><center>Here you will find all related references to the application.</center></p>
  <p><center><i>The application is currently under process.</i></center></p>
-  <head>
-        <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
-<script type='text/javascript' src="http://www.jplayer.org/latest/js/jquery.jplayer.min.js"></script>
-<div id="audio"></div>
-<a href="http://www.freesfx.co.uk/rx2/mp3s/3/2665_1315685839.mp3">
-    <img src="http://icons.iconarchive.com/icons/creative-freedom/shimmer/48/Play-icon.png" />
-</a>
-<a href="http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3">
-    <img src="http://icons.iconarchive.com/icons/creative-freedom/shimmer/48/Play-icon.png" />
-</a>
-<script>
-  $("#audio").jPlayer({
-    swfPath: "http://www.jplayer.org/latest/js/Jplayer.swf",
-    supplied: "mp3"
-});
-
-$("a").click(function(e) {
-    $("#audio").jPlayer("setMedia", { 
-        mp3: this.href 
-    }).jPlayer("play");
-
-    e.preventDefault();
-});
-</script>
 
 </div>
 
@@ -612,19 +607,29 @@ function showButtons(style) {
 </div>
 <div id="Contact" class="tabcontent">
  <h3>Contact</h3>
- <form method="post" name="contact_form"
-action="contact-form-handler.php">
-    Your Name:
-    <input type="text" name="name">
-    Email Address:
-    <input type="text" name="email">
-    Message:
-    <textarea name="message"></textarea>
-    <input type="submit" value="Submit">
-</form>
+ <p>Go to teh technology room.</p>
 </div>
 
+<script>
+function openCity(evt, cityName) {
+   var i, tabcontent, tablinks;
+   tabcontent = document.getElementsByClassName("tabcontent");
+   for (i = 0; i < tabcontent.length; i++) {
+       tabcontent[i].style.display = "none";
+   }
+   tablinks = document.getElementsByClassName("tablinks");
+   for (i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" active", "");
+   }
+   document.getElementById(cityName).style.display = "block";
+   evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 <footer style="background-color:#4b4545"></footer>
 </body>
 </html>
 
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
